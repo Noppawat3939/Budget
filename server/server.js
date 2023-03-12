@@ -10,13 +10,7 @@ const ORIGIN = process.env.CORS_ORIGIN;
 
 server.use(router);
 
-server.use(
-  cors({
-    origin: ORIGIN,
-    allowedHeaders: ["*"],
-    methods: ["*"],
-  })
-);
+server.use(cors());
 
 server.listen(PORT, () => {
   console.log(`Start Server... Port ${PORT}`);
