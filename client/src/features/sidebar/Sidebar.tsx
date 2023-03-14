@@ -1,4 +1,4 @@
-import { FC } from "react"
+import { FC, memo } from "react"
 import {
 	Box,
 	useColorModeValue,
@@ -48,4 +48,4 @@ const Sidebar: FC<SidebarProps> = (props) => {
 	)
 }
 
-export default Sidebar
+export default memo(Sidebar)
